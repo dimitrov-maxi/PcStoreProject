@@ -1,0 +1,5 @@
+COUNT WHERE email == ' + emailInput +' && password == '+ passInput +'
+
+If (count = 1){
+    corrPass();
+}
