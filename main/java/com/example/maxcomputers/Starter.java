@@ -8,7 +8,9 @@ package com.example.maxcomputers;
 
         import java.io.IOException;
 
-    public class Starter extends Application {
+        import static com.example.maxcomputers.Connection.connect;
+
+public class Starter extends Application {
             @Override
             public void start(Stage stage){
                 try{
@@ -23,7 +25,9 @@ package com.example.maxcomputers;
     }
 
         public static void main(String[] args) {
-            launch();
+                connect();
+                launch();
+
         }
     }
 
