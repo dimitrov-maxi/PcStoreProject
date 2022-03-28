@@ -27,7 +27,6 @@ public class Starter extends Application {
         public static void main(String[] args) {
                 connect();
                 launch();
-
         }
     }
 

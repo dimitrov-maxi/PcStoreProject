@@ -39,4 +39,8 @@ public class AdminPanel {
         stage.setScene(scene);
         stage.show();
     }
+    @FXML
+    void LogIn(ActionEvent event) throws IOException {
+        System.out.println("You logged in!");
+    }
 }
