@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="457.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pcstoreproject.UserPanel">
     <children>
-        <PasswordField layoutX="67.0" layoutY="333.0" prefHeight="40.0" prefWidth="243.0" promptText="password" />
+        <PasswordField fx:id="passInfo" layoutX="67.0" layoutY="333.0" prefHeight="40.0" prefWidth="243.0" promptText="password" />
         <Text layoutX="174.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login" wrappingWidth="305.720703125">
             <font>
                 <Font size="57.0" />
@@ -20,13 +20,13 @@
                 <Font size="30.0" />
             </font>
         </Text>
-        <TextField layoutX="67.0" layoutY="208.0" prefHeight="40.0" prefWidth="243.0" promptText="emall" />
+        <TextField fx:id="emailInfo" layoutX="67.0" layoutY="208.0" prefHeight="40.0" prefWidth="243.0" promptText="emall" />
         <Text layoutX="67.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter password:">
             <font>
                 <Font size="30.0" />
             </font>
         </Text>
-        <Button layoutX="390.0" layoutY="202.0" mnemonicParsing="false" prefHeight="171.0" prefWidth="197.0" text="Log in">
+        <Button layoutX="390.0" layoutY="202.0" mnemonicParsing="false" onAction="#loginCheck" prefHeight="171.0" prefWidth="197.0" text="Log in">
             <font>
                 <Font size="45.0" />
             </font>

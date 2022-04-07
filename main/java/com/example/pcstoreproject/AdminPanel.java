@@ -13,6 +13,7 @@ import java.io.IOException;
 import static com.example.pcstoreproject.Connection.checkAdmins;
 
 public class AdminPanel {
+    @FXML
     private Stage stage;
     @FXML
     private TextField emailInfo;
@@ -22,24 +23,32 @@ public class AdminPanel {
     @FXML
     void goBack(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("LoginPanel.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
 
     @FXML
-    void LogIn(ActionEvent event) throws IOException {
-        loginCheck();
-    }
-    void loginCheck(){
+    void loginCheck(ActionEvent event) throws IOException {
         String email = emailInfo.getText();
         String password = passInfo.getText();
 
-        if (checkAdmins(email, password)){
+        if (checkAdmins(email, password)) {
             System.out.println("You logged in!");
-        }else{
+                switchToPage(event);
+
+        } else {
             System.out.println("Invalid email or password!");
         }
+    }
+
+@FXML
+    private void switchToPage(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("AdminPage.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }
