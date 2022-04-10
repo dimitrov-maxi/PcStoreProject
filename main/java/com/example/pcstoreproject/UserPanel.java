@@ -12,7 +12,6 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import static com.example.pcstoreproject.Connection.checkAdmins;
 import static com.example.pcstoreproject.Connection.checkUsers;
 
 public class UserPanel {
@@ -41,5 +40,13 @@ public class UserPanel {
         }else{
             System.out.println("Invalid email or password!");
         }
+    }
+    @FXML
+    void registerButton(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("RegisterPanel.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }
