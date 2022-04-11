@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="961.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pcstoreproject.StorePage">
+  <tabs>
+    <Tab text="CPUs">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TilePane layoutY="2.0" />
+                  <HBox layoutX="34.0" layoutY="34.0" prefHeight="150.0" prefWidth="258.0">
+                     <children>
+                        <ImageView fitHeight="190.0" fitWidth="189.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pictures/CPUs/Intel/i3-9100f.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="150.0" prefWidth="58.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CPU:" wrappingWidth="47.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="#Cores" wrappingWidth="47.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="#Threads" wrappingWidth="63.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Base Frq." wrappingWidth="63.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Boost Frq." wrappingWidth="71.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="135.0" prefWidth="72.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="i3-9100f" wrappingWidth="70.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="71.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="63.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3.6GHz" wrappingWidth="63.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4.2GHz" wrappingWidth="71.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <Button mnemonicParsing="false" onAction="#orderCPUi3" text="Order" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="481.0" layoutY="34.0" prefHeight="150.0" prefWidth="317.0">
+                     <children>
+                        <ImageView fitHeight="190.0" fitWidth="244.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pictures/CPUs/Intel/i5-9600kf.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="150.0" prefWidth="58.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CPU:" wrappingWidth="47.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="#Cores" wrappingWidth="47.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="#Threads" wrappingWidth="63.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Base Frq." wrappingWidth="63.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Boost Frq." wrappingWidth="71.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="150.0" prefWidth="58.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="i5-9600KF" wrappingWidth="75.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6" wrappingWidth="71.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6" wrappingWidth="63.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3.7GHz" wrappingWidth="63.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4.6GHz" wrappingWidth="71.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <Button mnemonicParsing="false" onAction="#orderCPUi5" prefHeight="30.0" prefWidth="54.0" text="Order" />
+                     </children>
+                  </HBox>
+                  <Button layoutX="895.0" layoutY="556.0" mnemonicParsing="false" onAction="#logOut" text="Log out" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Motherboards">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TilePane layoutY="2.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

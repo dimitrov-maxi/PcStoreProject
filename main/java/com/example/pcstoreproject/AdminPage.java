@@ -77,4 +77,3 @@ public class AdminPage implements Initializable{
         CPUInfo.setItems(CPUList);
     }
 }
-

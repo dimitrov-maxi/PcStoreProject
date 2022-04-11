@@ -20,7 +20,7 @@ public class Starter extends Application {
             stage.show();
 
         }catch (Exception e){
-            e.printStackTrace();
+            System.out.println("Problems with loading the FXML file "+ e);
         }
     }
 

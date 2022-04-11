@@ -31,15 +31,24 @@ public class UserPanel {
         stage.show();
     }
     @FXML
-    void loginCheck(){
+    void loginCheck(ActionEvent event) throws IOException{
         String email = emailInfo.getText();
         String password = passInfo.getText();
 
         if (checkUsers(email, password)) {
             System.out.println("You logged in!");
+            switchToPage(event);
         }else{
             System.out.println("Invalid email or password!");
         }
+    }
+    @FXML
+    private void switchToPage(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("StorePage.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
     @FXML
     void registerButton(ActionEvent event) throws IOException {
