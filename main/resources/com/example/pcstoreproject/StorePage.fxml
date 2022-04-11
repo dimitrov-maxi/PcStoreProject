@@ -20,7 +20,7 @@
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
                   <TilePane layoutY="2.0" />
-                  <HBox layoutX="34.0" layoutY="34.0" prefHeight="150.0" prefWidth="258.0">
+                  <HBox layoutX="34.0" layoutY="34.0" prefHeight="189.0" prefWidth="401.0">
                      <children>
                         <ImageView fitHeight="190.0" fitWidth="189.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -50,6 +50,11 @@
                                  </font>
                               </Text>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Boost Frq." wrappingWidth="71.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Price: " wrappingWidth="71.96484184265137">
                                  <font>
                                     <Font size="15.0" />
                                  </font>
@@ -86,15 +91,20 @@
                                     <Font size="15.0" />
                                  </font>
                               </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="120$" wrappingWidth="71.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
                            </children>
                            <padding>
                               <Insets bottom="20.0" top="20.0" />
                            </padding>
                         </VBox>
-                        <Button mnemonicParsing="false" onAction="#orderCPUi3" text="Order" />
+                        <Button mnemonicParsing="false" onAction="#orderCPUi3" prefHeight="30.0" prefWidth="60.0" text="Order" />
                      </children>
                   </HBox>
-                  <HBox layoutX="481.0" layoutY="34.0" prefHeight="150.0" prefWidth="317.0">
+                  <HBox layoutX="481.0" layoutY="34.0" prefHeight="190.0" prefWidth="389.0">
                      <children>
                         <ImageView fitHeight="190.0" fitWidth="244.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -124,6 +134,11 @@
                                  </font>
                               </Text>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Boost Frq." wrappingWidth="71.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Price: " wrappingWidth="71.96484184265137">
                                  <font>
                                     <Font size="15.0" />
                                  </font>
@@ -160,12 +175,17 @@
                                     <Font size="15.0" />
                                  </font>
                               </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="320$" wrappingWidth="71.96484184265137">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
                            </children>
                            <padding>
-                              <Insets bottom="10.0" top="10.0" />
+                              <Insets bottom="20.0" top="20.0" />
                            </padding>
                         </VBox>
-                        <Button mnemonicParsing="false" onAction="#orderCPUi5" prefHeight="30.0" prefWidth="54.0" text="Order" />
+                        <Button mnemonicParsing="false" onAction="#orderCPUi5" prefHeight="30.0" prefWidth="66.0" text="Order" />
                      </children>
                   </HBox>
                   <Button layoutX="895.0" layoutY="556.0" mnemonicParsing="false" onAction="#logOut" text="Log out" />
