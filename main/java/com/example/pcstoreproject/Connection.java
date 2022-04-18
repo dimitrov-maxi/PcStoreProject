@@ -1,11 +1,10 @@
 package com.example.pcstoreproject;
 
-import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
+
 
 public class Connection {
     //=============================================================================================================
@@ -93,6 +92,29 @@ public class Connection {
             conn = DriverManager.getConnection(dbURL);
             PreparedStatement InsertUser = conn.prepareStatement(addUserQuery);
             InsertUser.executeUpdate();
+            conn.close();
+        } catch (Exception ConnErr) {
+            System.out.print("Did not connect to DB - Error: " + ConnErr);
+        }
+    }
+
+    public static void addToCart(String model){
+        try {
+            java.sql.Connection conn = null;
+            conn = DriverManager.getConnection(dbURL);
+            String getCPUQuantity = "Select Quantity from CPUs where model = '"+ model +"';";
+            PreparedStatement getQuantity = conn.prepareStatement(getCPUQuantity);
+            ResultSet rs = getQuantity.executeQuery();
+            int quantity = rs.getInt("Quantity");
+            if(quantity <= 0){
+                System.out.println("Out of stock!");
+            }else{
+                quantity--;
+                String removeCPU = "UPDATE CPUs SET quantity = '"+ quantity +"' Where model = '"+ model +"'";
+                PreparedStatement InsertUser = conn.prepareStatement(removeCPU);
+                InsertUser.executeUpdate();
+                System.out.println("Added to cart");
+            }
             conn.close();
         } catch (Exception ConnErr) {
             System.out.print("Did not connect to DB - Error: " + ConnErr);

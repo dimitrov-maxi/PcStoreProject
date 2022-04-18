@@ -10,18 +10,21 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+
+import static com.example.pcstoreproject.Connection.addToCart;
+
 public class StorePage {
     @FXML
     private Stage stage;
     @FXML
     void orderCPUi3(){
-        //quantity -1
-        System.out.println("Added to cart");
+        String model = "i3-9100f";
+        addToCart(model);
     }
     @FXML
     void orderCPUi5(){
-        //quantity -1
-        System.out.println("Added to cart");
+        String model = "i5-9600kf";
+        addToCart(model);
     }
     @FXML
     void logOut(ActionEvent event) throws IOException {

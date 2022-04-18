@@ -1,14 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.pcstoreproject.CPUTileController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="200.0" prefWidth="367.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pcstoreproject.CPUTileController">
+   <children>
+      <HBox>
+         <children>
+            <ImageView fx:id="CPUPic" fitHeight="200.0" fitWidth="232.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/CPUs/Intel/i3-9100f.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="83.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CPU:" wrappingWidth="38.13671875">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="#Cores">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="#Threads">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BaseFrq: ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BoostFrq: ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Price: ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="30.0" top="30.0" />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" layoutX="210.0" layoutY="10.0" prefHeight="200.0" prefWidth="89.0">
+               <children>
+                  <Text fx:id="CPUName" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="58.13671875">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="CoreCount" strokeType="OUTSIDE" strokeWidth="0.0" text="#Cores">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="ThreadCount" strokeType="OUTSIDE" strokeWidth="0.0" text="#Threads">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="BaseFrequency" strokeType="OUTSIDE" strokeWidth="0.0" text="FRQ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="BoostFrequency" strokeType="OUTSIDE" strokeWidth="0.0" text="FRQ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="price" strokeType="OUTSIDE" strokeWidth="0.0" text="prc">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="30.0" top="30.0" />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="BASELINE_RIGHT" layoutX="313.0" layoutY="10.0" prefHeight="200.0" prefWidth="55.0">
+               <opaqueInsets>
+                  <Insets bottom="30.0" top="30.0" />
+               </opaqueInsets>
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Order" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
 </AnchorPane>
